@@ -7,6 +7,7 @@ body
   font-family: 'cinzel', sarif
   padding: 0
   margin: 0
+  background-color: #272824
 
 .hero
   font-family: 'cinzel', sarif
@@ -19,13 +20,15 @@ body
 .home-hero
   background-image: url('/images/pond.jpg')
   background-size: cover
+  background-position: center
   height: 100vh
-  margin: -122px
 
 .hero-title
   font-weight: normal
+  text-transform: uppercase
   font-size: 144px
   margin-bottom: 0
+  text-align: center
 
 .hero-sub-title
   font-weight: normal
@@ -33,9 +36,21 @@ body
   max-width: 724px
   text-align: center
 
+.nav
+  position: fixed
+  top: 0
+  width: 100vw
+
 .nav-list
   display: flex
   justify-content: space-evenly
   color: ivory
+  font-size: 24px
+  text-transform: uppercase
   list-style: none
   margin: 50px 0
+  a
+    color: ivory
+    text-decoration: none
+    &:visited
+      color: ivory
