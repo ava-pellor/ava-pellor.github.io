@@ -71,7 +71,8 @@ body
     -webkit-font-smoothing: antialiased
     transform-origin: 0% 0%
     transform: translate(-100%, 0)
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+    opacity: 0
 
     li
       margin-bottom: 24px
@@ -128,6 +129,7 @@ body
 
   input:checked ~ ul.nav-list
     transform: none
+    opacity: 1
 
 @media only screen and (min-width: 769px)
   .nav
